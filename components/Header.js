@@ -8,8 +8,8 @@ function Header() {
         source={require('../assets/snack-icon.png')}
         style={styles.profileImage} 
       />
-      <Text style={styles.nameText}>Niccolo Jacques Roxas</Text>
-      <Text style={styles.subText}>Aspiring Quality Assurance Analyst</Text>
+      <Text style={styles.nameText}>Your Name</Text> 
+      <Text style={styles.subText}>Aspired Career</Text> 
     </View>
   );
 }
@@ -19,14 +19,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 70,
     padding: 30,
-    backgroundColor: '#20232a', // React Dark Theme
+    backgroundColor: '#20232a'
   },
   profileImage: {
     width: 100,
     height: 100,
     borderRadius: 50,
     borderWidth: 3,
-    borderColor: '#61dafb', // React Blue
+    borderColor: '#61dafb', 
   },
   nameText: {
     fontSize: 28,

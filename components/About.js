@@ -4,7 +4,8 @@ import { View, Text, StyleSheet, TouchableOpacity, Linking } from 'react-native'
 function About() {
   // Helper function to handle opening links
   function openProject(url) {
-    Linking.openURL(url).catch((err) => console.error("Couldn't load page", err));
+    Linking.openURL(url).catch((err) => 
+      console.error("Couldn't load page", err));
   }
 
   return (
@@ -14,13 +15,10 @@ function About() {
         <Text style={styles.centeredTitle}>Skills</Text>
         
         <View style={styles.skillsRow}>
-          {/* Programming Column */}
+          {/* Programming Languages Column */}
           <View style={styles.column}>
             <Text style={styles.columnHeader}>Programming</Text>
-            <Text>• JavaScript</Text>
-            <Text>• React Native</Text>
-            <Text>• HTML/CSS</Text>
-            <Text>• Python</Text>
+            <Text>Programming Languages you can do :)</Text>
           </View>
 
           {/* Technical Column */}
@@ -28,7 +26,7 @@ function About() {
             <Text style={styles.columnHeader}>Technical</Text>
             <Text>• Git/GitHub/Bitbucket</Text>
             <Text>• Expo Snack</Text>
-            <Text>• Databases</Text>
+            <Text>• Database</Text>
           </View>
         </View>
       </View>
@@ -36,10 +34,7 @@ function About() {
       {/*HOBBIES SECTION */}
       <View style={styles.section}>
         <Text style={styles.centeredTitle}>Hobbies</Text>
-        <Text style={styles.bulletItem}>Competitive Gaming</Text>
-        <Text style={styles.bulletItem}>Photography</Text>
-        <Text style={styles.bulletItem}>Reading Books</Text>
-        <Text style={styles.bulletItem}>Biking</Text>
+        <Text style={styles.bulletItem}>Physical Activities</Text>
       </View>
 
       {/* 3. PROJECTS SECTION */}
@@ -64,7 +59,7 @@ function About() {
         >
           <Text style={styles.projectTitle}>Enrollment System</Text>
           <Text style={styles.projectDescription}>
-            Enrollment System for Irregular Students of Pamantasan ng Lungsod ng Maynila (Click to view)
+            Enrollment System for Irregular Students of Pamantasan ng Lungsod ng Maynila 
           </Text>
         </TouchableOpacity>
       </View>

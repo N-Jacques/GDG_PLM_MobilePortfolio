@@ -12,12 +12,12 @@ function Footer() {
     <View style={styles.footer}>
       <Text style={styles.footerText}>Connect with me:</Text>
       
-      {/* TouchableOpacity makes the text behave like a button */}
-      <TouchableOpacity onPress={function() { openLink('https://github.com/N-Jacques'); }}>
+      
+      <TouchableOpacity onPress={function() { openLink('https://github.com/'); }}>{/* Edit in github profile link here */}
         <Text style={styles.link}>GitHub Profile</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={function() { openLink('https://www.linkedin.com/in/niccolo-roxas/'); }}>
+      <TouchableOpacity onPress={function() { openLink('https://www.linkedin.com/in/'); }}> {/* Edit in linkedin profile link here */}
         <Text style={styles.link}>LinkedIn Profile</Text>
       </TouchableOpacity>
     </View>
